@@ -1,15 +1,10 @@
 W całej witrynie powinny znaleźć się:
 1. Tekst:
-◦ znaki specjalne
 ◦ modyfikacja położenia względem linii bazowej itd.
-2. Grafika:
-◦ umieszczanie na stronie w naturalnych rozmiarach i zmodyfikowanych
-◦ każda grafika powinna posiadać tekst alternatywny (alt)
 5. Odnośniki (linki):
 ◦ umożliwiające pobranie pliku (przez http i ftp), pliki powinny znajdować się w
 różnych lokalizacjach
 ◦ wysłanie poczty
-◦ uaktywniane kliknięciem na obrazek.
 6. Formularz:
 ◦ Rozwijaną listę z pogrupowanymi opcjami
 ◦ Pole tekstowe na wpisanie maksymalnie 200 znaków (text area)
