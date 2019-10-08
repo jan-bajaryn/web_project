@@ -6,6 +6,4 @@ W całej witrynie powinny znaleźć się:
 różnych lokalizacjach
 ◦ wysłanie poczty
 6. Formularz:
-◦ Rozwijaną listę z pogrupowanymi opcjami
-◦ Pole tekstowe na wpisanie maksymalnie 200 znaków (text area)
 ◦ Przyciski do czyszczenia i wysłania formularza.
