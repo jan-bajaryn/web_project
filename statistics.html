@@ -3,6 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Statistics</title>
+    <style>
+        .beta td,
+        .beta th,
+        .beta tr {
+            padding: 5px;
+            border: 1px solid black;
+        }
+        .alpha tr,
+        .alpha td,
+        .alpha th{
+            padding: 2px;
+            border: 3px solid black;
+        }
+        .gamma tr,
+        .gamma td,
+        .gamma th{
+            padding: 2px;
+            border: 1px solid black;
+        }
+        .gamma table{
+            border: 3px solid black;
+        }
+        .omega tr,
+        .omega td,
+        .omega th{
+            padding: 2px;
+            border: 3px dotted black;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -12,216 +42,216 @@
     </h1>
 </header>
 
-<div align="center">
-    <table>
-        <thead>
-        <tr>
-            <td>Count of users</td>
-            <td>Money earned by bloggers</td>
-            <td>Business deals done</td>
-        </tr>
-        </thead>
-        <tr>
-            <td>
-                <table cellpadding="2"
-                       border="1"
-                       style="border: black">
-                    <thead>
-                    <tr>
-                        <td>Count of users</td>
-                        <td>Date of refreshing</td>
-                    </tr>
-                    </thead>
+<div style="text-align: center;">
+    <div style=" display: inline-block">
 
-                    <tr>
-                        <td>500</td>
-                        <td>2.10.1999</td>
-                    </tr>
-                    <tr>
-                        <td>10 000</td>
-                        <td>2.10.2000</td>
-                    </tr>
-                    <tr>
-                        <td>63 212</td>
-                        <td>4.11.2005</td>
-                    </tr>
-                    <tr>
-                        <td>70 233</td>
-                        <td>5.11.2007</td>
-                    </tr>
-                    <tr>
-                        <td>70 345</td>
-                        <td>4.12.2010</td>
-                    </tr>
-                    <tr>
-                        <td>80 034</td>
-                        <td>12.02.2015</td>
-                    </tr>
-                    <tr>
-                        <td>85 321</td>
-                        <td>13.03.2018</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table cellpadding="2" border="1" style="border: black">
-                    <thead>
-                    <tr>
-                        <td>Count of $ Earned</td>
-                        <td>Date of refreshing</td>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <td>10 000</td>
-                        <td>2.10.1999</td>
-                    </tr>
-                    <tr>
-                        <td>50 000</td>
-                        <td>2.10.2000</td>
-                    </tr>
-                    <tr>
-                        <td>100 000</td>
-                        <td>4.11.2005</td>
-                    </tr>
-                    <tr>
-                        <td>1 000 000</td>
-                        <td>5.11.2007</td>
-                    </tr>
-                    <tr>
-                        <td>2 000 000</td>
-                        <td>4.12.2010</td>
-                    </tr>
-                    <tr>
-                        <td>10 000 000</td>
-                        <td>12.02.2015</td>
-                    </tr>
-                    <tr>
-                        <td>100 000 000</td>
-                        <td>13.03.2018</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
+        <table>
+            <thead>
+            <tr>
+                <td>Count of users</td>
+                <td>Money earned by bloggers</td>
+                <td>Business deals done</td>
+            </tr>
+            </thead>
+            <tr>
+                <td>
+                    <table class="beta">
+                        <thead>
+                        <tr>
+                            <td>Count of users</td>
+                            <td>Date of refreshing</td>
+                        </tr>
+                        </thead>
 
-                <table cellpadding="2" border="1" style="border: 3px solid black">
-                    <thead>
-                    <tr>
-                        <td rowspan="2">Result</td>
-                        <td colspan="2">Checkout</td>
-                        <td rowspan="2">Auditor</td>
-                    </tr>
-                    <tr>
-                        <td>Begin</td>
-                        <td>End</td>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <td>1</td>
-                        <td>2.9.1999</td>
-                        <td>2.10.1999</td>
-                        <td>Arnold Jakubowski</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2.9.2000</td>
-                        <td>2.10.2000</td>
-                        <td>Andrzej Duda</td>
-                    </tr>
-                    <tr>
-                        <td>0</td>
-                        <td>4.10.2005</td>
-                        <td>4.11.2005</td>
-                        <td rowspan="2">Anton Kukek</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>5.10.2007</td>
-                        <td>5.11.2007</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>4.11.2010</td>
-                        <td>4.12.2010</td>
-                        <td>Dmytro Wayda</td>
-                    </tr>
-                    <tr>
-                        <td>0</td>
-                        <td>12.1.2015</td>
-                        <td>12.2.2015</td>
-                        <td rowspan="2">Anton Kukek</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>13.2.2018</td>
-                        <td>13.3.2018</td>
-                    </tr>
-                </table>
+                        <tr>
+                            <td>500</td>
+                            <td>2.10.1999</td>
+                        </tr>
+                        <tr>
+                            <td>10 000</td>
+                            <td>2.10.2000</td>
+                        </tr>
+                        <tr>
+                            <td>63 212</td>
+                            <td>4.11.2005</td>
+                        </tr>
+                        <tr>
+                            <td>70 233</td>
+                            <td>5.11.2007</td>
+                        </tr>
+                        <tr>
+                            <td>70 345</td>
+                            <td>4.12.2010</td>
+                        </tr>
+                        <tr>
+                            <td>80 034</td>
+                            <td>12.02.2015</td>
+                        </tr>
+                        <tr>
+                            <td>85 321</td>
+                            <td>13.03.2018</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="alpha">
+                        <thead>
+                        <tr>
+                            <td>Count of $ Earned</td>
+                            <td>Date of refreshing</td>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>10 000</td>
+                            <td>2.10.1999</td>
+                        </tr>
+                        <tr>
+                            <td>50 000</td>
+                            <td>2.10.2000</td>
+                        </tr>
+                        <tr>
+                            <td>100 000</td>
+                            <td>4.11.2005</td>
+                        </tr>
+                        <tr>
+                            <td>1 000 000</td>
+                            <td>5.11.2007</td>
+                        </tr>
+                        <tr>
+                            <td>2 000 000</td>
+                            <td>4.12.2010</td>
+                        </tr>
+                        <tr>
+                            <td>10 000 000</td>
+                            <td>12.02.2015</td>
+                        </tr>
+                        <tr>
+                            <td>100 000 000</td>
+                            <td>13.03.2018</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
 
-            </td>
-        </tr>
-    </table>
+                    <table class="gamma">
+                        <thead>
+                        <tr>
+                            <td rowspan="2">Result</td>
+                            <td colspan="2">Checkout</td>
+                            <td rowspan="2">Auditor</td>
+                        </tr>
+                        <tr>
+                            <td>Begin</td>
+                            <td>End</td>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>1</td>
+                            <td>2.9.1999</td>
+                            <td>2.10.1999</td>
+                            <td>Arnold Jakubowski</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2.9.2000</td>
+                            <td>2.10.2000</td>
+                            <td>Andrzej Duda</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>4.10.2005</td>
+                            <td>4.11.2005</td>
+                            <td rowspan="2">Anton Kukek</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>5.10.2007</td>
+                            <td>5.11.2007</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>4.11.2010</td>
+                            <td>4.12.2010</td>
+                            <td>Dmytro Wayda</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td>12.1.2015</td>
+                            <td>12.2.2015</td>
+                            <td rowspan="2">Anton Kukek</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>13.2.2018</td>
+                            <td>13.3.2018</td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 
-
-<div align="center">
-    <table cellpadding="2"
-           border="1">
-        <tr>
-            <td>Count of users</td>
-            <td>1000 000</td>
-            <td>Date of refreshing: 2.10.19</td>
-        </tr>
-        <tr>
-            <td>Business deals done</td>
-            <td>2345</td>
-            <td>Date of refreshing: 2.10.19</td>
-        </tr>
-        <tr>
-            <td>Money earned by bloggers on platform</td>
-            <td>20000000$</td>
-            <td>Date of refreshing: 2.10.19</td>
-        </tr>
-    </table>
+<div style="text-align: center">
+    <div style="display: inline-block">
+        <table class="omega">
+            <tr>
+                <td>Count of users</td>
+                <td>1000 000</td>
+                <td>Date of refreshing: 2.10.19</td>
+            </tr>
+            <tr>
+                <td>Business deals done</td>
+                <td>2345</td>
+                <td>Date of refreshing: 2.10.19</td>
+            </tr>
+            <tr>
+                <td>Money earned by bloggers on platform</td>
+                <td>20000000$</td>
+                <td>Date of refreshing: 2.10.19</td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <a href="myHtml.html">Link to home page</a>
 
 
-
-<table border="1" style="border: black">
-    <tr>
-        <th rowspan="2">Name</th>
-        <th rowspan="2">ID</th>
-        <th colspan="2">Membership Dates</th>
-        <th rowspan="2">Balance</th>
-    </tr>
-    <tr>
-        <th>Joined</th>
-        <th>Canceled</th>
-    </tr>
-    <tr>
-        <th>Margaret Nguyen</td>
-        <td>427311</td>
-        <td><time datetime="2010-06-03">June 3, 2010</time></td>
-        <td>n/a</td>
-        <td>0.00</td>
-    </tr>
-    <tr>
-        <th>Edvard Galinski</td>
-        <td>533175</td>
-        <td><time datetime="2011-01013">January 13, 2011</time></td>
-        <td><time datetime="2017-04008">April 8, 2017</time></td>
-        <td>37.00</td>
-    </tr>
-    <tr>
-        <th>Hoshi Nakamura</td>
-        <td>601942</td>
-        <td><time datetime="2012-07-23">July 23, 2012</time></td>
-        <td>n/a</td>
-        <td>15.00</td>
-    </tr>
-</table>
+<!--<table border="1" style="border: black">-->
+<!--    <tr>-->
+<!--        <th rowspan="2">Name</th>-->
+<!--        <th rowspan="2">ID</th>-->
+<!--        <th colspan="2">Membership Dates</th>-->
+<!--        <th rowspan="2">Balance</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <th>Joined</th>-->
+<!--        <th>Canceled</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <th>Margaret Nguyen</td>-->
+<!--        <td>427311</td>-->
+<!--        <td><time datetime="2010-06-03">June 3, 2010</time></td>-->
+<!--        <td>n/a</td>-->
+<!--        <td>0.00</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <th>Edvard Galinski</td>-->
+<!--        <td>533175</td>-->
+<!--        <td><time datetime="2011-01013">January 13, 2011</time></td>-->
+<!--        <td><time datetime="2017-04008">April 8, 2017</time></td>-->
+<!--        <td>37.00</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <th>Hoshi Nakamura</td>-->
+<!--        <td>601942</td>-->
+<!--        <td><time datetime="2012-07-23">July 23, 2012</time></td>-->
+<!--        <td>n/a</td>-->
+<!--        <td>15.00</td>-->
+<!--    </tr>-->
+<!--</table>-->
 
 
 </body>
