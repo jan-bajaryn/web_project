@@ -1,0 +1,31 @@
+*{
+    font-family: "Agency FB";
+}
+
+#header{
+    font-size: 44px;
+}
+
+p, h1{
+    color: darkorchid;
+}
+
+p.ptag{
+    font-style: italic;
+}
+
+.name{
+    font-weight: bold;
+}
+a[href="myHtml.html"]{
+    color: purple;
+    font-weight: bold;
+}
+
+.container article {
+    background-color: silver;
+}
+
+.container > article {
+    font-style: oblique;
+}
