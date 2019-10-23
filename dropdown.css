@@ -63,3 +63,8 @@ ul ul li a{
 ul ul ul li a{
     background: green;
 }
+
+body {
+  background: #ffffff url("img/img_tree.png") no-repeat right top;
+  margin-right: 200px;
+}
