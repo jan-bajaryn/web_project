@@ -1,0 +1,22 @@
+    body {
+        background-image: url("../img/gradient_bg.png");
+        background-repeat: repeat-x;
+    }
+
+    img {
+        float: left;
+    }
+
+    .rght {
+        text-align: right;
+    }
+
+    .both {
+        clear: both;
+    }
+    .inline{
+        display: inline-block;
+    }
+    img{
+        margin: 10px auto 20px; display: block;
+    }

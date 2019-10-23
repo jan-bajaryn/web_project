@@ -1,0 +1,29 @@
+        details {
+            font-style: oblique;
+        }
+
+        * {
+            line-height: 1.6;
+        }
+
+        header > h1 {
+            position: relative;
+            left: 100px;
+            right: 150px;
+            top: 30px;
+        }
+        #first_section{
+            min-height: 92%; margin-bottom:1%;
+        }
+        .centr{
+            text-align: center;
+        }
+        .rigt{
+            text-align: right;
+        }
+        #reg_href{
+            margin-right: 15px;
+        }
+        footer{
+            border-top: 2px solid silver; margin-top: 15px; padding: 1%; position: static;
+        }

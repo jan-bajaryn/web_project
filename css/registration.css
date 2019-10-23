@@ -1,0 +1,30 @@
+        #ftr {border-top: 2px solid silver; margin-top: 15px; padding: 1%;}
+        #ftr_det {text-align: center;}
+        #link_div {text-align:right;}
+        header {font-family: Monospace, "Times New Roman", Times;}
+        aside {
+            font-weight: normal;
+        }
+        *{
+            line-height: 80%;
+        }
+        input:checked {
+            height: 50px;
+            width: 50px;
+        }
+
+        input[type="text"]:disabled {
+            background: #dddddd;
+        }
+
+        input[type="text"]:enabled {
+            background: #ffff00;
+        }
+
+        input:focus {
+            background-color: aquamarine;
+        }
+
+        input:required {
+            background-color: darkkhaki;
+        }
