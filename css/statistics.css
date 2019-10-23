@@ -1,0 +1,38 @@
+        .beta td,
+        .beta th,
+        .beta tr {
+            padding: 5px;
+            border: 1px solid black;
+            font-size: 1.1em;
+
+        }
+        .alpha tr,
+        .alpha td,
+        .alpha th{
+            padding: 2px;
+            border: 3px solid black;
+        }
+        .gamma tr,
+        .gamma td,
+        .gamma th{
+            padding: 2px;
+        }
+        .gamma table{
+            border: 3px solid black;
+        }
+        .omega tr,
+        .omega td,
+        .omega th{
+            padding: 2px;
+            border: 3px;
+            border-color:green;
+             border-style:dotted;
+            font-size: 17px;
+            border-width: thin thick thick thick;
+        }
+        thead:first-child{
+            font-size: 130%;
+        }
+        #text{
+            font-size: 15pt;
+        }
