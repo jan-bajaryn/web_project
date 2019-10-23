@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
+    <link rel="stylesheet" href="styleForComments.css">
     <style>
         #ftr {border-top: 2px solid silver; margin-top: 15px; padding: 1%;}
         #ftr_det {text-align: center;}
@@ -14,6 +15,27 @@
         *{
             line-height: 80%;
         }
+        input:checked {
+            height: 50px;
+            width: 50px;
+        }
+
+        input[type="text"]:disabled {
+            background: #dddddd;
+        }
+
+        input[type="text"]:enabled {
+            background: #ffff00;
+        }
+
+        input:focus {
+            background-color: aquamarine;
+        }
+
+        input:required {
+            background-color: darkkhaki;
+        }
+
     </style>
 </head>
 <body>
@@ -27,7 +49,7 @@
             <input type="text" name="name" id="name" autofocus ></div>
 
         <div><label for="surname">Surname: </label>
-            <input type="text" name="surname" id="surname" required></div>
+            <input type="text" name="surname" id="surname" disabled></div>
 
         <div><label for="email" >Your email:</label>
             <input type="email" name="Email" id="email"  required>

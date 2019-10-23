@@ -1,3 +1,4 @@
+
 *{
     font-family: "Agency FB";
 }
@@ -28,4 +29,65 @@ a[href="myHtml.html"]{
 
 .container > article {
     font-style: oblique;
+
 }
+
+#header + article{
+    color: coral;
+}
+
+a:hover{
+text-decoration: none;
+}
+
+a:active {
+    color: #0000FF;
+}
+
+a:link {
+    color: #FF0000;
+}
+
+/*
+article:empty {
+    background: #ff0000;
+}
+
+
+p:first-child {
+    background-color: yellow;
+}
+p:last-child{
+    background-color: yellow;
+}*/
+
+p:last-of-type {
+    background: #ff0000;
+}
+
+:not(p) {
+    background: lavender;
+}
+
+p:only-child{
+    font-weight: bold;
+}
+
+:target {
+    border: 2px solid #D4D4D4;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+a:visited{
+    color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
