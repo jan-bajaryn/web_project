@@ -3,35 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Statistics</title>
-    <style>
-        .beta td,
-        .beta th,
-        .beta tr {
-            padding: 5px;
-            border: 1px solid black;
-        }
-        .alpha tr,
-        .alpha td,
-        .alpha th{
-            padding: 2px;
-            border: 3px solid black;
-        }
-        .gamma tr,
-        .gamma td,
-        .gamma th{
-            padding: 2px;
-            border: 1px solid black;
-        }
-        .gamma table{
-            border: 3px solid black;
-        }
-        .omega tr,
-        .omega td,
-        .omega th{
-            padding: 2px;
-            border: 3px dotted black;
-        }
-    </style>
+    <link rel="stylesheet" href="css/statistics.css">
 </head>
 <body>
 
@@ -220,16 +192,24 @@
 </meter>
 <br/>
 
+<p>You have a bug report? Describe your problem here</p>
+
+<form action="?">
+    <textarea id="text" name="text" placeholder="Write your problem" maxlength="200"></textarea>
+    <br>
+    <input type="submit" value="Wyslij">
+    <input type="reset" value="Wyczysc">
+</form>
 <a href="myHtml.html">Link to home page</a>
 
 
 <footer>
     <div style="text-align: center">
-    <details>
-        <summary>Copyright 1999-2018.</summary>
-        <p> - by Refsnes Data. All Rights Reserved.</p>
-        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-    </details>
+        <details>
+            <summary>Copyright 1999-2018.</summary>
+            <p> - by Refsnes Data. All Rights Reserved.</p>
+            <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+        </details>
     </div>
 </footer>
 
