@@ -7,6 +7,17 @@
         float: left;
     }
 
+    .image{
+        border: 20px solid transparent;
+
+        border-image-source:
+                url("../img/ponyborder.png");
+        border-image-repeat: round;
+        border-image-slice: 27;
+        text-align:center;
+        /*border: 20px solid;
+        border-image: url("../img/ponyborder.png") 27 round;*/
+    }
     .rght {
         text-align: right;
     }
