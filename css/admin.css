@@ -82,3 +82,69 @@
     100% {opacity: 0; left: 50px; top: 0px;}
     }
 
+
+     .flexbox {
+                width: 600px;
+                height: 420px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                -webkit-box-orient: horizontal;
+                box-orient: horizontal;
+            }
+
+            .flexbox > div {
+                -webkit-transition: 1s ease-out;
+                transition: 1s ease-out;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                border: 2px solid black;
+                width: 120px;
+                margin: 10px -10px 10px 0px;
+                padding: 20px 20px 20px 20px;
+                box-shadow: 10px 10px 10px dimgrey;
+            }
+
+            .flexbox > div:nth-child(1) {
+                background-color: white;
+            }
+
+            .flexbox > div:nth-child(2) {
+                background-color: green;
+            }
+
+            .flexbox > div:nth-child(3) {
+                background-color: blue;
+            }
+
+            .flexbox > div:nth-child(4) {
+                background-color: red;
+            }
+
+            .flexbox > div:hover {
+                width: 200px;
+                color: white;
+                font-weight: bold;
+            }
+
+            .flexbox > div:nth-child(1):hover {
+                background-color: royalblue;
+            }
+
+            .flexbox > div:nth-child(2):hover {
+                background-color: crimson;
+            }
+
+            .flexbox > div:nth-child(3):hover {
+                background-color: crimson;
+            }
+
+            .flexbox > div:nth-child(4):hover {
+                background-color: darkgreen;
+            }
+
+            p {
+                height: 250px;
+                overflow: hidden;
+                font-family: Monospace, "Times New Roman", Times;
+            }
+
