@@ -12,6 +12,7 @@
     <h1>There are links to all pages of this website.</h1>
 </header>
 <div>
+    <p id="active"></p>
     <a href="admin.html">admin page</a>
     <br>
     <a href="comments.html">comments page</a>
@@ -24,8 +25,17 @@
     <br>
     <a href="statistics.html">statistics page</a>
 
-    <img src="img/img_tree.png" class="image" title="admin" alt="Admin">
+    <img id="img" src="img/img_tree.png" class="image" title="admin" alt="Admin">
+
 
 </div>
+<script>
+    window.addEventListener('click', function () {
+        document.getElementById('active').innerHTML = "The page is currently active" +
+            "<br>You already clicked on this page at least" +
+            "<br>1 time";
+        document.getElementById('img').style.visibility = 'hidden';
+    })
+</script>
 </body>
 </html>

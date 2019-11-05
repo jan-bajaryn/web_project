@@ -14,11 +14,32 @@
         <br>
         <label for="password">Enter your password: </label><input type="password" name="password" id="password">
         <br>
-
-        <input type="submit" value="Submit" name="submit">
     </form>
+    <input type="submit" id="submit" value="Submit">
 
 </div>
 <a href="myHtml.html">Link to home page</a>
+<script>
+    var arr = window.location.pathname.split("/");
+    arr.pop();
+    alert(arr);
+    let resultString = arr.reduce(function (total, num) {
+        return total += num + "/";
+    });
+    alert(resultString);
+    document.getElementById('submit').addEventListener('click', function () {
+        var i = Math.floor((Math.random() * 3) + 1);
+        switch (i) {
+            case 1:
+                alert("The password is incorrect.");
+                break;
+            case 2:
+                alert("Your account is in ban");
+                break;
+            default:
+                window.open(window.location.origin+"/"+resultString + "postregistration.html", "_top");
+        }
+    })
+</script>
 </body>
 </html>

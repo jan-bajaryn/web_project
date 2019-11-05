@@ -1,9 +1,4 @@
-W całej witrynie powinny znaleźć się:
-1. Tekst:
-◦ modyfikacja położenia względem linii bazowej itd.
-5. Odnośniki (linki):
-◦ umożliwiające pobranie pliku (przez http i ftp), pliki powinny znajdować się w
-różnych lokalizacjach
-◦ wysłanie poczty
-6. Formularz:
-◦ Przyciski do czyszczenia i wysłania formularza.
+• parseInt()
+• parseFloat()
+• instrukcje sterujące: if…else while, do…while, for
+• zmienne globalne
