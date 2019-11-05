@@ -1,5 +1,8 @@
      @import url('https://fonts.googleapis.com/css?family=Righteous');
      @import url('https://fonts.googleapis.com/css?family=Montserrat');
+     ::-webkit-scrollbar {
+         display: none;
+     }
      html{
 
          box-sizing: border-box;
@@ -9,11 +12,16 @@
          box-sizing: inherit;
      }
      body{
-         background: azure;
+       /*  background: azure;*/
          font-size: 24px;
          font-family: Montserrat;
          line-height: 1.2;
          color: #682A2A;
+     }
+
+
+     li{
+         list-style-type: none;
      }
 /*Header start*/
      header{
@@ -21,6 +29,9 @@
          top: 0;
          left: 0;
          width: 100%;
+         transition: .2s linear;
+         padding-bottom: 20px;
+         z-index: 999;
      }
 
      img{
@@ -39,6 +50,11 @@
          align-items: flex-end;
          justify-content: space-between;
          padding-top: 21px;
+     }
+
+     .header_active{
+         background: #682A2A;
+
      }
 
      .header_list{
@@ -71,7 +87,13 @@
      /*Intro start*/
 .intro{
     height: 1000px;
-    background: url("../img/background.png") no-repeat;
+    background: url("../img/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+/*
+    background: url("../img/background.png") no-repeat;*/
     background-size: cover;
     padding-top: 371px;
     color: white;
@@ -82,6 +104,7 @@
     font-size: 64px;
     line-height: 79px;
     text-align: center;
+
 }
 
      /*Intro end*/
@@ -95,12 +118,14 @@
          text-align: center;
          position: relative;
          margin-bottom: 41px;
+         border-radius: 25px;
      }
 
      .benefits_title{
+         font-family: Righteous;
          width: 100%;
          font-weight: bold;
-         font-size: 35px;
+         font-size: 48px;
          line-height: 78px;
          padding-top: 93px;
          position: absolute;
@@ -108,6 +133,7 @@
          left: 0;
          transform: translateY(-100%);
          background: white;
+         border-radius: 25px;
 
      }
 
@@ -133,7 +159,12 @@
 
      .links{
          height: 497px;
-         background: url("../img/backg_links.png") no-repeat;
+         background: url("../img/backg_links.png") no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+         /*background: url("../img/backg_links.png") no-repeat;*/
          background-size: cover;
          padding-top: 130px;
          color: white;
@@ -147,9 +178,10 @@
      }
 
      .links_title{
+         font-family: Righteous;
          width: 100%;
          font-weight: bold;
-         font-size: 35px;
+         font-size: 48px;
          line-height: 78px;
          margin-bottom: 62px;
      }
@@ -184,14 +216,30 @@
 
      /*Footer start*/
      footer{
+
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         transition: .2s linear;
          height: 203px;
          padding-top: 44px;
          font-size: 14px;
          line-height: 17px;
          text-align: center;
+         background-color: #682A2A;
+     }
+     .details{
+         color: white;
      }
 
+     .link_card_admin{
+         color: white;
+         text-decoration: none;
+     }
 
+     .link_card_admin > p:hover, link_card_admin > p:focus, link_card_admin > p:active{
+         opacity: .75;
+     }
      /*Footer end*/
      /*
      header, footer{
