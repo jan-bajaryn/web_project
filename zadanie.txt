@@ -1,4 +1,0 @@
-• parseInt()
-• parseFloat()
-• instrukcje sterujące: if…else while, do…while, for
-• zmienne globalne

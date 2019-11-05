@@ -6,6 +6,7 @@
     <meta name="keywords" content="links,navigation,information,bloggers">
     <title>Links page</title>
     <link rel="stylesheet" type="text/css" href="css/links_page.css">
+    <script src="js/functions.js"></script>
 </head>
 <body>
 <header>
@@ -27,15 +28,11 @@
 
     <img id="img" src="img/img_tree.png" class="image" title="admin" alt="Admin">
 
+    <p id="list_user"></p>
 
 </div>
 <script>
-    window.addEventListener('click', function () {
-        document.getElementById('active').innerHTML = "The page is currently active" +
-            "<br>You already clicked on this page at least" +
-            "<br>1 time";
-        document.getElementById('img').style.visibility = 'hidden';
-    })
+    links_page();
 </script>
 </body>
 </html>

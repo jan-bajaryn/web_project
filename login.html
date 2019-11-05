@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Login page">
     <meta name="keywords" content="Login,log in,sing in,verification,security,bloggers">
+    <script src="js/functions.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -14,32 +15,15 @@
         <br>
         <label for="password">Enter your password: </label><input type="password" name="password" id="password">
         <br>
+        <label for="check">Enter number between 5 and 6</label><input type="number" name="check" id="check">
+        <br>
     </form>
     <input type="submit" id="submit" value="Submit">
 
 </div>
 <a href="myHtml.html">Link to home page</a>
 <script>
-    var arr = window.location.pathname.split("/");
-    arr.pop();
-    alert(arr);
-    let resultString = arr.reduce(function (total, num) {
-        return total += num + "/";
-    });
-    alert(resultString);
-    document.getElementById('submit').addEventListener('click', function () {
-        var i = Math.floor((Math.random() * 3) + 1);
-        switch (i) {
-            case 1:
-                alert("The password is incorrect.");
-                break;
-            case 2:
-                alert("Your account is in ban");
-                break;
-            default:
-                window.open(window.location.origin+"/"+resultString + "postregistration.html", "_top");
-        }
-    })
+    login();
 </script>
 </body>
 </html>
