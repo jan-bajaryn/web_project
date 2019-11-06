@@ -5,110 +5,120 @@
     <meta name="description" content="Registration page">
     <meta name="keywords" content="registration,sing up,bloggers">
     <title>Registration</title>
-    <link rel="stylesheet" type="text/css" href="css/styleForComments.css">
     <link rel="stylesheet" type="text/css" href="css/registration.css">
 </head>
 <body>
 
-<header>
-    <h1>Registration page: </h1>
+<header class="header">
+    <div class="wrapper">
+        <div class="header_wrapper">
+            <div class="header_logo">
+                <a href="myHtml.html" class="header_logo_link">
+                    <img src="img/B.svg" alt="Welcome to bloggers social network" class="header_logo_pick">
+                </a>
+            </div>
+
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li class="header_item">
+                        <a class="header_link" href="login.html">Log in</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
-<div class="form">
-    <form autocomplete="on" action="postregistration.html">
-        <div><label for="name">Name: </label>
-            <input type="text" name="name" id="name" autofocus ></div>
 
-        <div><label for="surname">Surname: </label>
-            <input type="text" name="surname" id="surname" disabled></div>
+<main class="main">
+    <section class="intro">
+        <div class="wrapper">
+            <h1 class="intro_title">
+                Registration
+            </h1>
+        </div>
+    </section>
 
-        <div><label for="email" >Your email:</label>
-            <input type="email" name="Email" id="email"  required>
-            <small>Format:mail@'x'mail.'xxx'</small>
+    <section class="input_forms">
+        <div class="form">
+            <form autocomplete="on" action="postregistration.html">
+
+
+                <div>
+                    <input type="text" name="name" id="name" autofocus placeholder="Name"></div>
+
+                <div>
+                    <input type="text" name="surname" id="surname" placeholder="Surname"></div>
+
+                <div>
+                    <input type="email" name="Email" id="email" placeholder="Email" required>
+                </div>
+
+                <div>
+                    <input type="tel" name="tel" id="tel" placeholder="Number" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" >
+                </div>
+
+
+
+                <input list="month" id="ice-cream-choice" name="ice-cream-choice" placeholder="Birthday" />
+
+                <datalist id="month">
+                    <option value="January">
+                    <option value="February">
+                    <option value="March">
+                    <option value="April">
+                    <option value="May">
+                    <option value="June">
+                    <option value="Jule">
+                    <option value="August">
+                    <option value="September">
+                    <option value="October">
+                    <option value="November">
+                    <option value="December"S>
+                </datalist>
+
+                <div class="gender_input">
+
+                    <label  class="radio_label">
+                        Gender
+                        <br>
+                        <label class="radio_m_gender"><input class="mr" type="radio" name="gender" value="male"> <i></i>Male</label>
+                        <label class="radio_f_gender"><input class="fr" type="radio" name="gender" value="female"> <i></i>Female</label>
+                    </label>
+
+
+                </div>
+                <div class="buttons">
+                    <input type="reset" value="Wyczysc">
+
+                    <input type="submit" value="Submit" >
+                </div>
+            </form>
+
+        </div>
+    </section>
+</main>
+
+
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="details">
+            <details>
+                <summary>Copyright 1999-2018.</summary>
+                <p> - by Refsnes Data. All Rights Reserved.</p>
+                <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+            </details>
         </div>
 
-        <div><label for="tel">Your tel:</label>
-            <input type="tel" name="tel" id="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" >
+        <div class="admin">
 
-            <small>Format:123 456 789</small>
+            <a href="admin.html" class="link_card_admin">
+                <p>
+                    Admin &#169;
+                </p>
+            </a>
+
         </div>
-
-        <div>
-            <label for="ice-cream-choice">Month of birth:</label>
-            <input list="month" id="ice-cream-choice" name="ice-cream-choice" />
-
-            <datalist id="month">
-                <option value="January">
-                <option value="February">
-                <option value="March">
-                <option value="April">
-                <option value="May">
-                <option value="June">
-                <option value="Jule">
-                <option value="August">
-                <option value="September">
-                <option value="October">
-                <option value="November">
-                <option value="December">
-            </datalist>
-        </div>
-
-        Choose your gender:
-        <br>
-        <input type="radio" name="gender" value="male"> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br>
-        <br>
-
-        <select name="Miasto">
-            <optgroup label="Dolny Slask">
-                <option>Wroclaw</option>
-                <option>Walbrzych</option>
-                <option>Legnica</option>
-            </optgroup>
-            <optgroup label="Mazowieckie">
-                <option>Warszawa</option>
-                <option>Plock</option>
-                <option>Radom</option>
-            </optgroup>
-        </select>
-
-        <div>Profession:</div>
-        <label>Bloger:
-            <input type="checkbox" name="mycomp">
-        </label>
-        <br>
-        <label>Advertiser:
-            <input type="checkbox" name="mycomp">
-        </label>
-        <br>
-
-
-        <input type="submit" value="Submit" >
-
-        <div><input type="reset" value="Wyczysc"></div>
-    </form>
-
-</div>
-<div id="link_div">
-    <a href="myHtml.html">Link to home page</a>
-    <aside>
-        <h2>blogint</h2>
-        <p>A bloggers interaction website</p>
-    </aside>
-</div>
-
-<footer id="ftr">
-    <div id="ftr_det">
-        <details>
-            <summary>Copyright 1999-2018.</summary>
-            <p> - by Refsnes Data. All Rights Reserved.</p>
-            <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-        </details>
-
-        <a href="admin.html">
-            <p>
-                Admin &#169;
-            </p>
-        </a>
     </div>
 </footer>
 </body>
