@@ -23,7 +23,15 @@
 </div>
 <div class="both">
 
-    <h3>Rules of communication on the website:</h3>
+    <h3 id="toAppend">Rules of communication on the website:</h3>
+    <button id="createSpace" onclick="myFunction()">Make space</button>
+    <script>
+        function myFunction() {
+            let myEl = document.createElement("P");
+            document.getElementById('toAppend').appendChild(myEl);
+        }
+
+    </script>
     <div class="flexbox">
         <div><img src="img/polite.PNG" width="90" alt="Be polite">
             <p>Be polite. It is forbidden to show disrespect
@@ -37,7 +45,8 @@
                 propaganda of political parties under the threat of permanent ban without possibility
                 of restoration</p></div>
         <div><img src="img/binar.PNG" width="90">
-            <p>Advertising of bookmakers, casinos, binary options, Forex and other similar services is prohibited.</p></div>
+            <p>Advertising of bookmakers, casinos, binary options, Forex and other similar services is prohibited.</p>
+        </div>
     </div>
 
     <div>
@@ -61,12 +70,79 @@
             <input id="wyczysc" type="reset" value="Wyczysc">
         </form>
         <br>
-        <form action="?">
-
-        </form>
     </div>
+
+    <div id="root">
+        <label>Check is email you entered is the admin email
+            <input id="emailToCheck" type="email" placeholder="write your email">
+            <button id="checkEmail" onclick="checkEmail()">Check</button>
+        </label>
+        <button id="clearText">clear</button>
+        <script>
+
+            function isTextThere() {
+                let root = document.getElementById('checkEmail').parentNode;
+                let child = root.childNodes[0];
+                return child.textContent === "That is not the admin email." || child.textContent === "That is the admin email.";
+            }
+
+            function clear() {
+                let root = document.getElementById('checkEmail').parentNode;
+                let child = root.childNodes[0];
+                if (isTextThere()) {
+                    root.removeChild(child);
+                }
+            }
+
+            document.getElementById("clearText").addEventListener('click', clear);
+
+            function checkEmail() {
+                clear();
+
+
+                if (document.getElementById('emailToCheck').value !== "245825@student.pwr.edu.pl") {
+                    let text = document.createTextNode("That is not the admin email.");
+                    let div = document.createElement("div");
+                    let root = document.getElementById("checkEmail").parentNode;
+                    div.appendChild(text);
+                    root.insertBefore(div, root.childNodes[0])
+                } else {
+
+                    let text = document.createTextNode("That is the admin email.");
+                    let div = document.createElement("div");
+                    let root = document.getElementById("checkEmail").parentNode;
+                    div.appendChild(text);
+                    root.insertBefore(div, root.childNodes[0]);
+
+                    if (isTextThere()) {
+                        root.replaceChild(div,root.childNodes[0]);
+                    } else {
+                        root.insertBefore(div, root.childNodes[0]);
+                    }
+
+                    // let text = document.createTextNode("That is the admin email.");
+                    // let div = document.createElement("div");
+                    // let root = document.getElementById("root");
+                    // div.appendChild(text);
+                    // root.insertBefore(div, root.childNodes[0])
+
+                    // if (isTextThere()){
+                    //     let root1 = root.childNodes[0];
+                    //     root1.replaceChild(text, root1.childNodes[0]);
+                    // }else {
+                    //     root.insertBefore(div, root.childNodes[0])
+                    // }
+
+                }
+
+
+            }
+        </script>
+    </div>
+
     <div>
-        <a id="forward" href="mailto:245825@student.pwr.edu.pl?subject=Your%20Subject%20Line&body=Thought%20you%20might%20be%20interested%20in%20this%20http://www.yourdomain.com">
+        <a id="forward"
+           href="mailto:245825@student.pwr.edu.pl?subject=Your%20Subject%20Line&body=Thought%20you%20might%20be%20interested%20in%20this%20http://www.yourdomain.com">
             Forward to a friend</a>
     </div>
 </div>

@@ -1,4 +1,5 @@
 var counter = 0;
+
 function addCount(element) {
     counter++;
     element.innerHTML = "Mouse here "+ counter + " times";
