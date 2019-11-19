@@ -23,6 +23,40 @@
     </h1>
 </header>
 
+
+<br>
+<br>
+
+<button onclick="findLinks()"> Find all links in the page</button>
+<br>
+<button onclick="findAnchors()"> Find all links in the page with names</button>
+<br>
+<input type="text" id="id_name">
+<button onclick="f(document.getElementById('id_name').value)">alert elements with id or name</button>
+<br>
+
+<script>
+    function findLinks() {
+        let links = document.links;
+
+        for (var i = 0; i < links.length; i++) {
+            // alert(links[i]);
+            links[i].textContent = links[i].textContent + " THERE IS A LINK!!!";
+        }
+
+    }
+
+    function findAnchors() {
+        let anchors = document.anchors;
+        for (let i = 0; i < anchors.length; i++)
+            anchors[i].textContent = anchors[i].textContent + " THIS IS AN ANCHOR WITH NAME AND HREF ATTRIBUTES!!!"
+    }
+
+    function f(value) {
+        let items = document.getElementsByTagName("*").namedItem(value).style.background = "red";
+    }
+</script>
+
 <br>
 <br>
 <div>
@@ -312,6 +346,8 @@
     <input type="reset" value="Wyczysc">
 </form>
 <a href="myHtml.html">Link to home page</a>
+<br>
+<a name="admin" href="admin.html">Link to admin page</a>
 
 <footer>
     <div style="text-align: center">

@@ -11,7 +11,18 @@ function addCount(element) {
     alert("hello, " + name)
 }());
 
+function resize_img() {
+    let images = document.images;
 
+    for (let i = 0; i < images.length; i++) {
+        if (images.item(i).height > 250 && images.item(i).height > 250) {
+            images.item(i).height = 250;
+            images.item(i).width = 250;
+        }
+
+
+    }
+}
 
 text1 = "Random quality - " + Math.random() + "<br>";
 document.writeln(text1);
