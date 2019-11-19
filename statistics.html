@@ -23,6 +23,104 @@
     </h1>
 </header>
 
+<br>
+<br>
+<div>
+    Choose background color:
+    <br>
+    <label>White
+        <input type="radio" name="background_color" value="white">
+    </label>
+    <br>
+    <label>Ice Blue
+        <input type="radio" name="background_color" value="ice-blue">
+    </label>
+    <br>
+    <label>lightseagreen
+        <input type="radio" name="background_color" value="lightseagreen">
+    </label>
+    <br>
+    <button id="submit_color">Submit</button>
+</div>
+<script>
+    document.getElementById('submit_color').addEventListener('click', function () {
+        var colors = document.getElementsByName('background_color').forEach(function (current) {
+            if (current.checked)
+                if (current.value === "ice-blue")
+                    document.body.style.background = "aliceblue";
+                else if (current.value === "lightseagreen")
+                    document.body.style.background = "lightseagreen";
+                else document.body.style.background = "white";
+        });
+        // document.body.style.background = "yellow";
+    })
+</script>
+<br>
+<div>
+    Choose text color:
+    <br>
+    <label>Black
+        <input type="radio" name="text_color" value="black">
+    </label>
+    <br>
+    <label>Red
+        <input type="radio" name="text_color" value="red">
+    </label>
+    <br>
+    <label>Green
+        <input type="radio" name="text_color" value="green">
+    </label>
+    <br>
+    <button id="submit_text">Submit</button>
+</div>
+<script>
+    document.getElementById('submit_text').addEventListener('click', function () {
+        var colors = document.getElementsByName('text_color').forEach(function (current) {
+            if (current.checked)
+                if (current.value === "black")
+                    document.body.style.color = "black";
+                else if (current.value === "red")
+                    document.body.style.color = "red";
+                else document.body.style.color = "green";
+        });
+    })
+</script>
+
+<br>
+<br>
+<div>
+    Choose font style:
+    <br>
+    <label>Normal
+        <input type="radio" name="font_style" value="normal">
+    </label>
+    <br>
+    <label>Italic
+        <input type="radio" name="font_style" value="italic">
+    </label>
+    <br>
+    <label>Oblique
+        <input type="radio" name="font_style" value="oblique">
+    </label>
+    <br>
+    <button id="submit_style">Submit</button>
+</div>
+<script>
+    document.getElementById('submit_style').addEventListener('click', function () {
+        var colors = document.getElementsByName('font_style').forEach(function (current) {
+            if (current.checked)
+                if (current.value === "normal")
+                    document.body.style.fontStyle = "normal";
+                else if (current.value === "italic")
+                    document.body.style.fontStyle = "italic";
+                else document.body.style.fontStyle = "oblique";
+        });
+    })
+</script>
+
+<br>
+<br>
+
 <div style="text-align: center;">
     <div style=" display: inline-block">
 
@@ -197,7 +295,10 @@
     </div>
 </div>
 
-<p id="support">We need your support for a new <mark>SERVER</mark>, pls donate here:</p>
+<p id="support">We need your support for a new
+    <mark>SERVER</mark>
+    , pls donate here:
+</p>
 <meter min="0" value="75" max="100">
 </meter>
 <br/>
