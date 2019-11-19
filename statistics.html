@@ -34,6 +34,8 @@
 <input type="text" id="id_name">
 <button onclick="f(document.getElementById('id_name').value)">alert elements with id or name</button>
 <br>
+<button onclick="show_forms()">show all forms!</button>
+<br>
 
 <script>
     function findLinks() {
@@ -54,6 +56,13 @@
 
     function f(value) {
         let items = document.getElementsByTagName("*").namedItem(value).style.background = "red";
+    }
+    function show_forms() {
+        let forms = document.forms;
+
+        for (let i = 0; i < forms.length; i++) {
+            forms.item(i).style.border="2px solid red";
+        }
     }
 </script>
 
