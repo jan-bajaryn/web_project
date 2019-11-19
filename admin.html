@@ -9,7 +9,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/admin.css">
 
-<body>
+<body onkeypress="showChar(event);">
 <header>
     <h1 id="name"></h1>
     <a href="myHtml.html"><img src="img/7cf720dca160a9679e3bbb8aec053fae.png" width="80" height="60" alt="Logo img"></a>
@@ -152,6 +152,20 @@
 <div>
     <span style="font-size: 64px; text-align: center" onmouseover="addCount(this) ">Mouse here 0 times</span>
 </div>
+
+<br>
+
+<button onclick="geek (event);">Get Alt key state!</button>
+
+<br>
+<h1>GeeksforGeeks</h1>
+<h2>MouseEvent clientX Property</h2>
+
+<p class="tupa" onclick="coord(event)">To get the x of the mouse pointer,
+    click on this paragraph. </p>
+
+<p id="gfg"></p>
+
 
 <script src="js/admin.js"></script>
 
